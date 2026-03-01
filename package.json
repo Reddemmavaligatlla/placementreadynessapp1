@@ -1,22 +1,21 @@
 {
-  "name": "kodnest-premium-build-system",
-  "version": "0.1.0",
+  "name": "netflix-style-omdb",
+  "version": "1.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "lint": "echo \"No linter configured\""
+    "preview": "vite preview --port 5173",
+    "test:fetch": "node scripts/testFetch.js"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "firebase": "^10.7.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.3",
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "typescript": "^5.6.3",
-    "vite": "^6.0.0"
+    "vite": "4.4.9",
+    "@vitejs/plugin-react": "4.0.0"
   }
 }
